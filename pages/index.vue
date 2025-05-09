@@ -3,21 +3,10 @@ import type { Blog } from "~/@types/blog.type";
 import { BlogRepository } from "~/repository/blog.repository";
 
 const recentBlogs: Blog[] = await BlogRepository.get();
-
-useSeoMeta({
-  titleTemplate(title) {
-    return title
-      ? `${title} - Muhammad Izza Alfiansyah`
-      : "✍️ Tulisan - Muhammad Izza Alfiansyah";
-  },
-  applicationName: "Tulisan - Muhammad Izza Alfiansyah",
-});
+makeSeoMeta();
 </script>
 
 <template>
-  <!-- <div
-    class="absolute top-0 left-0 right-0 bg-gradient-to-b from-primary/35 to-transparent vie-transparent to-b h-[25vh] blur-2xl"
-  ></div> -->
   <div
     class="flex items-center py-28 pb-10 mb-10 border-b border-b-gray-100 dark:border-b-gray-800 relative"
   >
