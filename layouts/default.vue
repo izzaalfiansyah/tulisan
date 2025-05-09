@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex items-center justify-center">
-    <div class="text-5xl font-bold text-primary">Hello World!</div>
+  <div class="lg:px-10 px-5 main-container mx-auto">
+    <slot></slot>
   </div>
 </template>

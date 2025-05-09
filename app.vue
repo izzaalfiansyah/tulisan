@@ -1,7 +1,9 @@
+<script lang="ts" setup>
+import "./app.css";
+</script>
+
 <template>
-  <div class="min-h-screen bg-gray-50">
-    <NuxtLayout>
-      <NuxtPage></NuxtPage>
-    </NuxtLayout>
-  </div>
+  <NuxtLayout>
+    <NuxtPage></NuxtPage>
+  </NuxtLayout>
 </template>
