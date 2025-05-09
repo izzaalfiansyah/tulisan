@@ -8,14 +8,14 @@ defineProps<{
 <template>
   <NuxtLink
     :to="makeSlug(blog.title)"
-    class="transition hover:text-primary rounded px-5 py-4 flex justify-between items-center group hover:bg-primary/10"
+    class="transition hover:text-primary rounded px-5 py-4 flex justify-between items-center group hover:bg-primary/10 gap-x-5"
   >
-    <div>
+    <div class="grow">
       <div class="font-semibold text-xl font-tages inline-flex">
         <span class="mr-2">{{ blog.icon }}</span>
         {{ blog.title }}
       </div>
-      <div class="mt-1 text-muted">{{ blog.description }}</div>
+      <div class="mt-1 text-muted truncate">{{ blog.description }}</div>
       <div class="mt-3 inline-flex space-x-2 items-center text-sm">
         <svg
           xmlns="http://www.w3.org/2000/svg"

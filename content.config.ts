@@ -11,6 +11,7 @@ export default defineContentConfig({
         icon: z.string(),
         tags: z.array(z.string()),
         date: z.string(),
+        place: z.string(),
         imagePath: z.string(),
       }),
     }),
