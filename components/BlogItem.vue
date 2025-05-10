@@ -10,7 +10,7 @@ defineProps<{
     :to="makeSlug(blog.title)"
     class="transition hover:text-primary rounded px-5 py-4 flex justify-between items-center group hover:bg-primary/10 gap-x-5"
   >
-    <div class="grow">
+    <div class="grow min-w-0">
       <div class="font-semibold text-xl font-tages inline-flex">
         <span class="mr-2">{{ blog.icon }}</span>
         {{ blog.title }}
@@ -34,23 +34,25 @@ defineProps<{
         {{ formatDate(blog.date) }}
       </div>
     </div>
-    <div
-      class="size-8 rounded-full flex items-center justify-center dark:bg-gray-800 bg-gray-100 -translate-x-full transition group-hover:translate-x-0 opacity-0 group-hover:opacity-100"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-6"
+    <div>
+      <div
+        class="size-8 rounded-full flex items-center justify-center dark:bg-gray-800 bg-gray-100 -translate-x-full transition group-hover:translate-x-0 opacity-0 group-hover:opacity-100"
       >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="m8.25 4.5 7.5 7.5-7.5 7.5"
-        />
-      </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </div>
     </div>
   </NuxtLink>
 </template>

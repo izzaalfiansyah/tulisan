@@ -67,9 +67,12 @@ onMounted(() => {
         <template v-if="blog.tags">
           <div class="mt-2 flex flex-wrap items-center gap-2">
             <template v-for="tag in blog.tags">
-              <a class="text-primary bg-primary/20 px-2 text-sm rounded">
+              <NuxtLink
+                :to="`/tags/${tag}`"
+                class="text-primary bg-primary/20 px-2 text-sm rounded"
+              >
                 # {{ tag }}
-              </a>
+              </NuxtLink>
             </template>
           </div>
         </template>

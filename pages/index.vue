@@ -43,7 +43,10 @@ makeSeoMeta();
         </div>
       </div>
     </div>
-    <div class="">
+    <div class="space-y-2">
+      <template v-if="!blogs.length">
+        <div class="text-center text-muted">Blog tidak ditemukan</div>
+      </template>
       <template v-for="blog in blogs">
         <BlogItem :blog="blog"></BlogItem>
       </template>

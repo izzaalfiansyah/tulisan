@@ -15,7 +15,7 @@ body,
 }
 
 .main-container {
-  @apply w-[756px] max-w-full mx-auto;
+  @apply w-[756px] max-w-full mx-auto lg:px-10 px-5;
 }
 
 .text-muted {
