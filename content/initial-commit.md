@@ -2,7 +2,7 @@
 title: Initial Commit
 description: ini adalah tulisan pertama yang aku buat
 icon: 👋
-tags: [halo]
+tags: [halo, dunia]
 date: 2024-10-26
 place: Jember
 imagePath: /assets/images/1428909728.jpg

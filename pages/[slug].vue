@@ -15,6 +15,7 @@ function generateTitle() {
 
     makeSeoMeta({
       title,
+      description: blog.description,
     });
 
     higlight.highlightAll();
@@ -76,6 +77,13 @@ onMounted(() => {
             </template>
           </div>
         </template>
+        <!-- <div class="mt-10">
+          <input
+            type="text"
+            placeholder="Tulis Komentar..."
+            class="w-full bg-transparent border-none outline-none placeholder:text-gray-500"
+          />
+        </div> -->
       </div>
       <div class="mt-10 pt-5 border-t border-t-gray-100 dark:border-t-gray-800">
         <ContentRenderer
