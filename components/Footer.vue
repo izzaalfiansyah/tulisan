@@ -1,11 +1,16 @@
 <template>
-  <div class="text-center mb-10">
-    &copy; 2025
-    <a
-      href="https://izzaalfiansyah.vercel.app"
-      class="text-primary"
-      target="_blank"
-      >Muhammad Izza Alfiansyah</a
-    >
+  <div
+    class="text-center mb-10 flex items-center justify-between md:flex-row flex-col"
+  >
+    <div>
+      &copy; 2025
+      <a
+        href="https://izzaalfiansyah.vercel.app"
+        class="text-primary"
+        target="_blank"
+        >Muhammad Izza Alfiansyah</a
+      >
+    </div>
+    <ThemeButtonToggle></ThemeButtonToggle>
   </div>
 </template>
