@@ -15,12 +15,12 @@ makeSeoMeta({
 <template>
   <div class="main-container">
     <div class="min-h-[70vh]">
-      <div class="mt-20">
+      <div class="mt-14">
         <div class="text-4xl font-bold font-tages text-primary">
           🚀 #{{ $route.params.tag }}
         </div>
       </div>
-      <div class="mt-20">
+      <div class="mt-14">
         <template v-for="blog in blogs">
           <BlogItem :blog="blog"></BlogItem>
         </template>

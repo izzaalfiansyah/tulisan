@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tagesschrift&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tagesschrift&display=swap");
 
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .font-tages {
@@ -11,7 +11,7 @@
 html,
 body,
 .bg-background {
-  @apply bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100;
+  @apply bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200;
 }
 
 html.dark {

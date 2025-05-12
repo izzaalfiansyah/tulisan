@@ -23,10 +23,10 @@ makeSeoMeta();
 <template>
   <div class="main-container">
     <div
-      class="flex items-center py-28 pb-10 mb-10 border-b border-b-gray-100 dark:border-b-gray-800 relative"
+      class="flex items-center py-20 pb-10 mb-10 border-b border-b-gray-100 dark:border-b-gray-800 relative"
     >
       <div class="text-center w-full relative">
-        <div class="text-5xl font-bold text-primary font-tages">
+        <div class="text-4xl font-bold text-primary font-tages">
           Welcome to My Blog
         </div>
         <div class="mt-3 text-sm">
