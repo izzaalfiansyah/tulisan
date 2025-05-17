@@ -11,6 +11,8 @@
         >Muhammad Izza Alfiansyah</a
       >
     </div>
-    <ThemeButtonToggle></ThemeButtonToggle>
+    <ClientOnly>
+      <ThemeButtonToggle></ThemeButtonToggle>
+    </ClientOnly>
   </div>
 </template>
