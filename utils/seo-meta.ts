@@ -6,7 +6,9 @@ interface Props {
 export const makeSeoMeta = (props?: Props) => {
   useSeoMeta({
     title: props?.title,
-    description: props?.description,
+    description:
+      props?.description ||
+      "Terkadang ada beberapa hal yang perlu diungkapkan, namun tak tahu dimana harus mengungkapkannya. Bukankah begitu?",
     ogTitle: props?.title,
     ogDescription: props?.description,
     ogType: "article",

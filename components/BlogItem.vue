@@ -7,7 +7,7 @@ defineProps<{
 
 <template>
   <NuxtLink
-    :to="makeSlug(blog.title)"
+    :to="'/' + makeSlug(blog.title)"
     class="transition hover:text-primary rounded px-5 py-4 flex justify-between items-center group hover:bg-primary/5 gap-x-5"
   >
     <div class="grow min-w-0">
